@@ -1,0 +1,4 @@
+Model,Format,File Size (MB),mAP50,mAP50-95,Status
+FP32,LiteRT/TFLite,11.70,0.3743,0.2367,Validated
+INT8,LiteRT/TFLite,3.18,0.3592,0.1982,Validated
+FP16,LiteRT/TFLite,N/A,N/A,N/A,Separate FP16 TFLite not supported by current Ultralytics LiteRT exporter
