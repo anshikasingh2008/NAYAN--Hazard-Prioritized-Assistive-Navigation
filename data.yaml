@@ -1,4 +1,21 @@
-train: C:\Users\anshi\OneDrive\Desktop\projectexhibition\images\train
-val: C:\Users\anshi\OneDrive\Desktop\projectexhibition\images\train
+
+
+path: .
+
+train: dataset/images/train
+val: dataset/images/val
+
 nc: 11
-names: ['person', 'bicycle', 'car', 'motorcycle', 'bus', 'truck', 'traffic light', 'fire hydrant', 'stop sign', 'bench', 'chair']
+
+names:
+  - person
+  - bicycle
+  - car
+  - motorcycle
+  - bus
+  - truck
+  - traffic light
+  - fire hydrant
+  - stop sign
+  - bench
+  - chair
