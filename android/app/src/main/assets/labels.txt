@@ -1,0 +1,13 @@
+person
+bicycle
+car
+motorcycle
+bus
+truck
+traffic light
+fire hydrant
+stop sign
+bench
+chair
+stairs
+pothole

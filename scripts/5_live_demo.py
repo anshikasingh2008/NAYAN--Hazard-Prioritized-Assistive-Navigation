@@ -1,9 +1,21 @@
-﻿import cv2
+import cv2
 import time
-import pyttsx3
+import platform
+import subprocess
+try:
+    import pyttsx3
+except ImportError:
+    pyttsx3 = None
+
 from ultralytics import YOLO
 from importlib import import_module
 from pathlib import Path
+
+# Add scripts directory to path if needed
+import sys
+scripts_dir = str(Path(__file__).resolve().parent)
+if scripts_dir not in sys.path:
+    sys.path.append(scripts_dir)
 
 hazard_priority = import_module("4_hazard_priority")
 
@@ -35,12 +47,24 @@ last_alert_time = 0
 
 def speak(text):
     print(f"[ALERT] {text}")
-    engine = pyttsx3.init()
-    engine.setProperty('rate', 165)
-    engine.setProperty('volume', 1.0)
-    engine.say(text)
-    engine.runAndWait()
-    engine.stop()
+    # On macOS, native 'say' command is instantaneous and avoids pyobjc issues
+    if platform.system() == "Darwin":
+        try:
+            subprocess.Popen(["say", text])
+            return
+        except Exception:
+            pass
+
+    if pyttsx3 is not None:
+        try:
+            engine = pyttsx3.init()
+            engine.setProperty('rate', 165)
+            engine.setProperty('volume', 1.0)
+            engine.say(text)
+            engine.runAndWait()
+            engine.stop()
+        except Exception as e:
+            print(f"[TTS Error] {e}")
 
 
 cap = cv2.VideoCapture(0)
