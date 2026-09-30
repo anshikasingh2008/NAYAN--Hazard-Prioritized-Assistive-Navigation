@@ -1,4 +1,4 @@
-﻿RISK_WEIGHTS = {
+RISK_WEIGHTS = {
     "car": 1.0,
     "motorcycle": 1.0,
     "bus": 1.0,
@@ -10,6 +10,8 @@
     "bench": 0.2,
     "chair": 0.2,
     "traffic light": 0.2,
+    "stairs": 1.0,
+    "pothole": 0.9,
 }
 
 DEFAULT_WEIGHT = 0.3

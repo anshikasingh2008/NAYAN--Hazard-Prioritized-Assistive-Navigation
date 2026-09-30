@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NAYAN Assistive Navigation</string>
+    <string name="camera_permission_required">Camera permission is required to detect real-time hazards.</string>
+    <string name="hazard_status_idle">Scanning path for hazards…</string>
+</resources>
