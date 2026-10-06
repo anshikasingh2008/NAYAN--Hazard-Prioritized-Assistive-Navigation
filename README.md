@@ -74,8 +74,8 @@ and a status bar with the **Hazard**, **Path** and **TTC** values. The console p
 
 <table>
   <tr>
-    <td align="center"><img src="docs/images/demo-car.png" alt="NAYAN live demo detecting two cars" width="480"></td>
-    <td align="center"><img src="docs/images/demo-stop-sign.png" alt="NAYAN live demo detecting stop signs" width="300"></td>
+    <td align="center"><img src="screenshots/demo-car.png" alt="NAYAN live demo detecting two cars" width="480"></td>
+    <td align="center"><img src="screenshots/demo-stop-sign.png" alt="NAYAN live demo detecting stop signs" width="300"></td>
   </tr>
   <tr>
     <td align="center"><sub><b>Car ahead</b> — two cars tracked (ID 38, ID 44); the one in the corridor scores Hazard 0.84, Path 0.99, TTC N/A → alert: <i>"car ahead"</i></sub></td>
@@ -326,9 +326,8 @@ NAYAN--Hazard-Prioritized-Assistive-Navigation/
 ├── 📂 android/                          # Android app (CameraX → TFLite → hazard → TTS)
 ├── 📂 models/                           # Trained / exported models
 ├── 📂 results/                          # Evaluation outputs
-├── 📂 testing images/                   # Images used for testing the demo
 ├── 📂 additional_data/                  # Additional labelled images (not yet in training)
-├── 📂 docs/images/                      # README screenshots
+├── 📂 screenshots/                      # README screenshots
 │
 ├── 📂 runs/detect/                      # Training runs (nayan_hazard_detector, -2, val) — regenerable
 ├── 📂 annotations/                      # (excluded — get from owner)
@@ -374,6 +373,7 @@ VIT Bhopal University**
 | Anjali Kumari | Object tracking & Android integration |
 | Shanya Kushwaha | Path-aware detection & TTC |
 | Surbhi Kumari | Documentation, testing & presentation |
+
 
 
 ---
