@@ -74,8 +74,8 @@ and a status bar with the **Hazard**, **Path** and **TTC** values. The console p
 
 <table>
   <tr>
-    <td align="center"><img src="screenshots/demo-car.png" alt="NAYAN live demo detecting two cars" width="480"></td>
-    <td align="center"><img src="screenshots/demo-stop-sign.png" alt="NAYAN live demo detecting stop signs" width="300"></td>
+    <td align="center"><img src="screenshots/demo-car.png.png" alt="NAYAN live demo detecting two cars" width="480"></td>
+    <td align="center"><img src="screenshots/demo-stop-sign.png.png" alt="NAYAN live demo detecting stop signs" width="300"></td>
   </tr>
   <tr>
     <td align="center"><sub><b>Car ahead</b> — two cars tracked (ID 38, ID 44); the one in the corridor scores Hazard 0.84, Path 0.99, TTC N/A → alert: <i>"car ahead"</i></sub></td>
